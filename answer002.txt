@@ -1,0 +1,11 @@
+eCommerce Sales Rank
+A large eCommerce company wishes to list the best-setling products, overall and by category.
+For example, one product might be the #1056th best-selling product overall but the #13th best-selling product under "Sports Equipment" and the #24th best-seiling product under "Safety."
+Give a detailed description how you would design this system, explaning your thought process and reasoning in a concise way
+
+
+The first thing that comes uo to my head is that we ar deailg with a filtering issue,
+Every product has its ranking in a difernt category
+So will have to add to each product filed "ranking_ids" an array of ranking
+It will link us to another table with ranking ( id , count , category)
+That way we can filter on each category the product by the ranking count
